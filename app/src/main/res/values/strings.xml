@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name" translatable="false">Munchkin Manager</string>
+
+    <string name="dummy_text">DUMMY TEXT</string>
+
+    <string name="button_create_room">Create game</string>
+    <string name="button_join_room">Join game</string>
+
+    <string name="button_save_settings">Save</string>
+    <string name="text_username">Username</string>
+    <string name="button_start_room">Start game</string>
+    <string name="text_game_name">Game name</string>
+    <string name="text_roll_dices">Roll dices</string>
+    <string name="text_level_short" translatable="false">LVL</string>
+    <string name="text_power_short">PWR</string>
+    <string name="text_level">Level</string>
+    <string name="text_power">Power</string>
+
+    <string name="text_want_to_exit">Do you really want to exit?</string>
+    <string name="text_yes">Yes</string>
+    <string name="text_no">No</string>
+    <string name="button_back">Back</string>
+    <string name="button_start">Start</string>
+    <string name="text_modifier">Modifier</string>
+    <string name="text_inventory">Inventory</string>
+    <string name="text_room_name">Room:</string>
+    <string name="text_select_game">Select game room</string>
+
+    <string name="error_message_empty_field">Field can\'t be empty</string>
+    <string name="error_message_max_characters">Max length is %1$d</string>
+    <string name="text_language">Language</string>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>Polski</item>
+    </string-array>
+
+    <string-array name="languages_values">
+        <item>"en"</item>
+        <item>"pl"</item>
+    </string-array>
+</resources>

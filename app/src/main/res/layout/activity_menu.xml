@@ -30,7 +30,7 @@
         android:visibility="visible"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/preferences_icon" />
+        app:srcCompat="@drawable/preferences_icon" />
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout3"
@@ -56,7 +56,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/user_icon" />
+            app:srcCompat="@drawable/user_icon" />
 
         <TextView
             android:id="@+id/label_username"

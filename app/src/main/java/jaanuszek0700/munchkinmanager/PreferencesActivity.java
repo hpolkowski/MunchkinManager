@@ -46,9 +46,9 @@ public class PreferencesActivity extends FullscreenActivity {
         final AppSettings appSettings = realm.where(AppSettings.class).findFirst();
         if(appSettings != null) {
             usernameInput.setText(appSettings.getPlayer().getUsername());
-            int imageIdentifier = getResources().getIdentifier(appSettings.getPlayer().getImage(), "mipmap", "jaanuszek0700.munchkinmanager");
+            int imageIdentifier = getResources().getIdentifier(appSettings.getPlayer().getImage(), "drawable", "jaanuszek0700.munchkinmanager");
             if (imageIdentifier > 0) {
-                ImageButton imageButton = (ImageButton) findViewById(R.id.preferences_user_image);
+                ImageButton imageButton = findViewById(R.id.preferences_user_image);
                 imageButton.setImageResource(imageIdentifier);
                 imageButton.setTag(appSettings.getPlayer().getImage());
             }
@@ -65,7 +65,7 @@ public class PreferencesActivity extends FullscreenActivity {
 
                 case REQUEST_USER_IMAGE:
                     String userImageTag = intent.getStringExtra(USER_IMAGE);
-                    int imageIdentifier = getResources().getIdentifier(userImageTag, "mipmap", "jaanuszek0700.munchkinmanager");
+                    int imageIdentifier = getResources().getIdentifier(userImageTag, "drawable", "jaanuszek0700.munchkinmanager");
                     if (imageIdentifier > 0) {
                         ImageButton imageButton = (ImageButton) findViewById(R.id.preferences_user_image);
                         imageButton.setImageResource(imageIdentifier);
@@ -110,7 +110,7 @@ public class PreferencesActivity extends FullscreenActivity {
             realm.beginTransaction();
             appSettings.setLanguage(languageValues.getString(lang));
             appSettings.getPlayer().setUsername(playerUsername);
-            appSettings.getPlayer().setImage(((ImageButton) findViewById(R.id.preferences_user_image)).getTag().toString());
+            appSettings.getPlayer().setImage(findViewById(R.id.preferences_user_image).getTag().toString());
             realm.commitTransaction();
 
             setResult(Activity.RESULT_OK);

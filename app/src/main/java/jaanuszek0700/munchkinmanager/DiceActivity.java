@@ -146,25 +146,25 @@ public class DiceActivity extends FullscreenActivity {
 
         switch (value) {
             case 1:
-                res = R.mipmap.dice_1_icon;
+                res = R.drawable.dice_1_icon;
                 break;
             case 2:
-                res = R.mipmap.dice_2_icon;
+                res = R.drawable.dice_2_icon;
                 break;
             case 3:
-                res = R.mipmap.dice_3_icon;
+                res = R.drawable.dice_3_icon;
                 break;
             case 4:
-                res = R.mipmap.dice_4_icon;
+                res = R.drawable.dice_4_icon;
                 break;
             case 5:
-                res = R.mipmap.dice_5_icon;
+                res = R.drawable.dice_5_icon;
                 break;
             case 6:
-                res = R.mipmap.dice_6_icon;
+                res = R.drawable.dice_6_icon;
                 break;
             default:
-                res = R.mipmap.dice_1_icon;
+                res = R.drawable.dice_1_icon;
                 break;
         }
 

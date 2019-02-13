@@ -46,7 +46,7 @@ public class MenuActivity extends FullscreenActivity {
         TextView labelUsername = (TextView) findViewById(R.id.label_username);
         labelUsername.setText(player.getUsername());
 
-        int imageIdentifier = getResources().getIdentifier(appSettings.getPlayer().getImage(), "mipmap", "jaanuszek0700.munchkinmanager");
+        int imageIdentifier = getResources().getIdentifier(appSettings.getPlayer().getImage(), "drawable", "jaanuszek0700.munchkinmanager");
         if (imageIdentifier > 0)
             ((ImageView) findViewById(R.id.preferences_user_image)).setImageResource(imageIdentifier);
 

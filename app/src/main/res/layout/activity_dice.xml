@@ -35,7 +35,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@+id/dice_1"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/dice_1_icon" />
+            app:srcCompat="@drawable/dice_1_icon" />
 
         <ImageView
             android:id="@+id/dice_1"
@@ -49,7 +49,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/dice_1_icon" />
+            app:srcCompat="@drawable/dice_1_icon" />
     </android.support.constraint.ConstraintLayout>
 
     <ImageButton
@@ -63,6 +63,6 @@
         android:onClick="backToGame"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:srcCompat="@mipmap/back_icon" />
+        app:srcCompat="@drawable/back_icon" />
 
 </android.support.constraint.ConstraintLayout>

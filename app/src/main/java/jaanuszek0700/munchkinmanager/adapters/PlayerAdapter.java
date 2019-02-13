@@ -42,7 +42,7 @@ public class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.ViewHolder
         holder.level.setText(String.valueOf(player.getLevel()));
         holder.power.setText(String.valueOf(player.getPower()));
 
-        int imageIdentifier = mInflater.getContext().getResources().getIdentifier(player.getImage(), "mipmap", "jaanuszek0700.munchkinmanager");
+        int imageIdentifier = mInflater.getContext().getResources().getIdentifier(player.getImage(), "drawable", "jaanuszek0700.munchkinmanager");
         if (imageIdentifier > 0)
             holder.image.setImageResource(imageIdentifier);
 
